@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title styling */
+.pirata-one-regular {
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 48px;
+    color: #8B4513;
+}
+
+/* Navigation bar styling */
+.nav-container {
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between the toggle button and the nav items */
+    padding: 10px 20px; /* Adjust padding as needed */
+    position: fixed; /* Keep the navbar fixed */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-toggle {
+    font-size: 24px; /* Adjust the size as needed */
+    background: none;
+    border: none;
+    color: #333; /* Change this color to match your theme */
+    cursor: pointer;
+    margin-right: auto; /* Pushes the menu button to the left */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+}
+
+#nav-title {
+    display: inline; /* Initially hide the title in the navbar */
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+    font-size: 24px; /* Adjust size to fit well in the nav */
+    color: #8B4513; /* Match color with the original title */
+    margin-left: 10px; /* Space between burger icon and title */
+}
+
+.nav-info {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adjust spacing between the items */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-info li a {
+    text-decoration: none;
+    color: #333; /* Adjust color to fit the design */
+}
+
+body {
+    background-image: url(/assets/premium_photo-1719530732867-924af4055812.jpg); /* Set your preferred background color */
+    color: #333; /* Change this color to match your theme */
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 50px; /* Adjust spacing as needed */
+    padding-top: 80px; /* Adjust padding based on header height */
+    min-height: 100vh;
+}
+
+/* Menu container styling */
+.menu-container {
+    grid-column: 1 / 2; /* First column for menu */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto; /* Keep auto height to avoid scrolling */
+    border-right: #333 solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+    min-height: 100vh;
+}
+
+/* Main content area styling with scroll */
+
+/* Additional styling for buttons */
+/* Menu button styling */
+.menu-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+.menu-buttons button {
+    background-color: #8B4513; /* Brown background for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px; /* Padding for button */
+    font-size: 18px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%; /* Full width of the column */
+}
+
+.menu-buttons button:hover {
+    background-color: #A0522D; /* Lighter brown on hover */
+}
+
+/* Optional: Add a focus state for accessibility */
+.menu-buttons button:focus {
+    outline: 2px solid #FFD700; /* Gold outline for focused buttons */
+    outline-offset: 2px; /* Space between the button and the outline */
+}
+
+section, footer {
+    grid-column: 2 / 2; /* Second column for main content */
+    height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling only in the main content area */
+}
+
+/* Center the h2 element in the .content section */
+/* Center the h2 element in the .content section */
+.content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+/* Style for the typewriter effect */
+.content h2 {
+    font-size: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid black;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+.content h2 {
+    font-family: "Pirata One", system-ui;
+    font-size: 36px; /* Adjust font size as needed */
+    color: #8B4513; /* Match the theme color */
+    overflow: hidden; /* Hide the overflowing text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    border-right: 3px solid #8B4513; /* Cursor effect */
+    animation: typewriter 2s steps(23) infinite alternate, blink 800ms steps(23) infinite normal;
+    border-right: 5px solid black;
+}
+
+.menu h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Pirata One", system-ui;
+  }
+  
+  .menu h2 {
+    font-size: 30px;
+  }
+  
+  .established {
+    font-style: italic;
+  }
+  
+  .menu h1, .menu h2, .menu h3 {
+    text-align: center;
+  }
+  
+  .menu {
+    grid-column: 2/2;
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    border: 12px #333 solid;
+    border-radius: 25px;
+  }
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+  }
+  
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+  }
+
+    .menu h2 {
+    font-family: Impact, serif;
+  }
+  
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 25%;
+  }
+
+/* Additional media query for responsive design if needed */
+@media (max-width: 768px) {
+    .nav-info {
+        display: none; /* Hide nav items on small screens if needed */
+    }
+
+    .menu-toggle {
+        margin-right: 10px; /* Adjust margin for small screens */
+    }
+}

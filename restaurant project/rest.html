@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>PIRATES BAY</title>
+</head>
+<body>
+
+
+    <header class="nav-container">
+        <nav>
+            <button class="menu-toggle" id="burger-icon">
+              &#9776;
+              <span id="nav-title" class="pirata-one-regular" >PIRATES BAY</span> 
+            </button>
+            <ul class="nav-info">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="main-container">
+        <aside class="menu-container" style = "display: none;">
+            <h2><strong>MENU</strong></h2>
+            <div class="menu-buttons">
+                <button  class="Breakfast"><i class="fas fa-utensils"></i> Breakfast</button>
+                <button  class="Vegan"><i class="fas fa-leaf"></i> Vegan's Section</button>
+                <button  class="seafood"><i class="fas fa-fish"></i> Sea Food</button>
+                <button  class="Carnivore"><i class="fas fa-drumstick-bite"></i> Carnivore's Corner</button>
+                <button  class="dessert"><i class="fas fa-ice-cream"></i> Desserts</button>
+            </div>
+        </aside>
+        <section class="content">
+            <h2 class = "typewriter" style="display: block;">Welcome to Pirates bay⛵</h2>
+        </section>
+
+        <!-- menu option -->
+         <!-- container for Breakfast -->
+
+        <div class="menu menu-breakfast"  style="display: none;"> 
+
+            <h1 class = "menu-header">PIRATES BAY</h1>
+            <p class="established">Est. 2024</p>
+            <hr>
+            <section>
+              <h2>BREAKFAST HOURS</h2>
+              <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+              <article class="item">
+                <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+              </article>
+              <article class="item">
+                <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+              </article>
+              <article class="item">
+                <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+              </article>
+              <article class="item">
+                <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+              </article>
+              <article class="item">
+                <p class="flavor">Mocha</p><p class="price">4.50</p>
+              </article>
+            </section>
+          </div>
+
+          <!-- container for dessert -->
+
+          <div class="menu menu-dessert"  style="display: none;">
+              <section">
+                    <h2>Desserts</h2>
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
+                    <article class="item">
+                      <p class="dessert">Donut</p><p class="price">1.50</p>
+                    </article>
+                    <article class="item">
+                      <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+                    </article>
+                    <article class="item">
+                      <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+                    </article>
+                    <article class="item">
+                      <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+                    </article>
+                  </section>
+            </div>
+
+        <!-- <footer>
+            <p>&copy; 2023 PIRATES BAY. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <button class="btn">Contact Us</button>
+        </footer> -->
+    </div>
+    <script src="rest.js"></script>
+</body>
+</html>
